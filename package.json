@@ -1,0 +1,19 @@
+{
+  "name": "yoin-apps-example",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev:demo": "pnpm --filter @yoin/demo dev",
+    "dev:local-server": "pnpm --dir server dev",
+    "dev:api-test": "pnpm --filter @yoin/api-test dev",
+    "build:demo": "pnpm --filter @yoin/demo build",
+    "build:api-test": "pnpm --filter @yoin/api-test build",
+    "dev:worker": "pnpm --filter yoin-worker dev",
+    "build": "pnpm build:demo && pnpm build:api-test"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  }
+}
