@@ -54,7 +54,7 @@ VITE_YOIN_WORKER_URL=ws://localhost:8080
 Production Worker 設定位於 `apps/demo/.env.production`：
 
 ```env
-VITE_YOIN_WORKER_URL=wss://yoin-worker.saiguanen.workers.dev
+VITE_YOIN_WORKER_URL=wss://yoin-worker.xxxxxxxx.workers.dev
 ```
 
 執行以下指令時，Vite 會使用 Production mode：
@@ -68,7 +68,7 @@ pnpm build:demo
 | 指令 | Server |
 | --- | --- |
 | `pnpm dev:demo` | `ws://localhost:8080` |
-| `pnpm build:demo` | `wss://yoin-worker.saiguanen.workers.dev` |
+| `pnpm build:demo` | `wss://yoin-worker.xxxxxxxx.workers.dev` |
 
 如果要測試 Production Worker，可使用已部署的網站，或明確以
 Production mode 啟動 Vite：
